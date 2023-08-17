@@ -151,6 +151,19 @@ article {
   color: var(--light-gray);
 }
 
+#danielArt .mainTest {
+  position: relative;
+  z-index: 0;
+}
+
+#danielArt .mainTest::after {
+  content: url(/images/bg-pattern-quotation.svg);
+  position: absolute;
+  top: -79px;
+  right: 48px;
+  z-index: -1;
+}
+
 #danielArt .name,
 #jonArt .name,
 #patrickArt .name {
@@ -267,5 +280,9 @@ article {
 
   .container {
     width: 327px;
+  }
+
+  #danielArt .mainTest::after {
+    right: -10px;
   }
 }
